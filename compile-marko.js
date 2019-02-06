@@ -1,8 +1,10 @@
 const compile = require("@marko/compile");
 
+// Compiles .marko -> .js
+
 compile.run({
-  files: "./built/**/*.marko"
+    patterns: ["./src/**/*.marko"]
 }).then(() => {
-  // All files are written to disk.
-  console.log("Compiled all files");
+    // All files are written to disk.
+    console.log("Compiled all .marko files.");
 });

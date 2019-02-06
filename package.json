@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf ./built/ && node ./clean-marko.js",
-    "build": "npm run clean && tsc && node ./compile-marko.js && webpack",
+    "build": "npm run clean && node ./compile-marko.js && tsc && webpack",
     "start": "npm run build && node ./built/webapp/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -34,5 +34,9 @@
     "typescript": "^3.3.1",
     "webpack": "^4.29.1",
     "webpack-cli": "^3.2.3"
+  },
+  "browser": {
+    "src/webapp/layout/default/index.js": "src/webapp/layout/default/index.browser.js",
+    "src/webapp/pages/shared-screen/template.js": "src/webapp/pages/shared-screen/template.browser.js"
   }
 }

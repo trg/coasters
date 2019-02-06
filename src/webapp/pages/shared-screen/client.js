@@ -1,2 +1,2 @@
-require('./template.marko');
+// require('./template.marko');
 require('marko/components').init();

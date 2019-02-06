@@ -1,7 +1,9 @@
 const compile = require("@marko/compile");
 
+// Cleans up after ./compile-marko.js
+
 compile.run({
   clean: true
 }).then(() => {
-  console.log("Cleaning complete.");
+  console.log("Marko Cleaning complete.");
 });
