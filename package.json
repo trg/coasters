@@ -4,7 +4,8 @@
   "description": "Coaster Game",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf ./built/ && tsc && node ./compile-marko.js && webpack",
+    "clean": "rm -rf ./built/ && node ./clean-marko.js",
+    "build": "npm run clean && tsc && node ./compile-marko.js && webpack",
     "start": "npm run build && node ./built/webapp/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,6 +30,7 @@
     "@babel/core": "^7.2.2",
     "@types/node": "^10.12.21",
     "babel-loader": "^8.0.5",
+    "marko-cli": "^6.0.2",
     "typescript": "^3.3.1",
     "webpack": "^4.29.1",
     "webpack-cli": "^3.2.3"

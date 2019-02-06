@@ -1,6 +1,6 @@
-import compile from "@marko/compile";
+const compile = require("@marko/compile");
 
-compile({
+compile.run({
   files: "./built/**/*.marko"
 }).then(() => {
   // All files are written to disk.
