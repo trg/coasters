@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf ./built/ && node ./clean-marko.js",
-    "build": "npm run clean && node ./compile-marko.js && tsc && webpack",
+    "build": "npm run clean && node ./compile-marko.js && ./node_modules/typescript/bin/tsc && webpack",
     "start": "npm run build && node ./built/webapp/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
