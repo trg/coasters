@@ -1,0 +1,33 @@
+game:
+1 round:
+    phase 1:
+        await each player chooses a card (moves card from hand to top of table stack)
+    phase 2:
+        in order, each player:
+            adds a card - or - 
+            bets and begins next phase
+    phase 3:
+        starting with next player, player may:
+            fold
+            increase bet
+        once all but one player is folded, next phase begins
+    phase 4:
+        player who did not fold last round, exposes their coasters in order top to bottom
+        if necessary to reach bet, chooses top coaster from other players stacks one at a time, until:
+             bet is reached (win round, reset to phase 1)
+             turn over a skull (lose round, discard random coaster, out of game if no coasters)
+
+
+todo: figure out what happens when player runs out of coasters
+
+
+player:
+    hand:
+        coasters<array>
+    tablestack:
+        coasters<array>
+    score: 
+        0<int>
+
+game:
+    players<ordered array>

@@ -1,0 +1,15 @@
+{
+  "name": "coasters",
+  "version": "0.0.1",
+  "description": "Coaster Game",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node ./built/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tom@tom.wtf",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.12.21"
+  }
+}
